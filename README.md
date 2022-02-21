@@ -22,26 +22,23 @@
 
 ```json
 [
-	{
+  {
     "from_to_name": "OsTypeMapping",
     "to_from_name": "ToOsTypeMapping",
-		"type":{
-			"int":"string",
-		},
-		"content":{
-				"[fromName]":"[toName]",
-				...
-		},
+    "type":{
+      "int":"string"
+    },
+    "content":{
+      "[fromName]":"[toName]"
+    },
     "form_value":{
-      "fromName":value,
-      ...
+      "fromName":"value"
     },
     "to_value":{
-      "toName":value,
-    },  
-		"change":true
-	},
-	...
+      "toName":"value"
+    },
+    "change":true
+  }
 ]
 ```
 
