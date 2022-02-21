@@ -1,0 +1,19 @@
+const ({{range $i, $v := .FromValue}}
+    {{$i}} = {{$v}}{{end}}
+)
+const ({{range $i, $v := .ToValue}}
+    {{$i}} = {{$v}}{{end}}
+)
+
+var (
+   {{.FromToName}}  = {{range $i, $v := .Type}}map[{{$i}}]{{$v}}{{end}} { {{range $i, $v := .Content}}
+     {{$i}}: {{$v}},{{end}}
+   }
+)
+
+{{if .Change}}var (
+    {{.ToFromName}}  = {{range $i, $v := .Type}}map[{{$v}}]{{$i}}{{end}} { {{range $i, $v := .Content}}
+      {{$v}}: {{$i}},{{end}}
+    }
+)
+{{end}}

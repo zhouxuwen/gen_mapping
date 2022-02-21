@@ -1,0 +1,42 @@
+[
+  {
+    "from_to_name": "OsTypeMapping",
+    "to_from_name": "ToOsTypeMapping",
+    "type": {
+      "int": "string"
+    },
+    "content": {
+      "VendorOsTypeIOS": "FancyOsTypeIOS",
+      "VendorOsTypeAndroid": "FancyOsTypeAndroid"
+    },
+    "from_value": {
+      "VendorOsTypeIOS": 1,
+      "VendorOsTypeAndroid": 2
+    },
+    "to_value": {
+      "FancyOsTypeIOS": "ios",
+      "FancyOsTypeAndroid": "android"
+    },
+    "change": true
+  },
+  {
+    "from_to_name": "SlotTypeMapping",
+    "to_from_name": "ToSlotTypeMapping",
+    "type": {
+      "string": "string"
+    },
+    "content": {
+      "VendorSlotTypeVideo":"FancySlotTypeVideo",
+      "VendorSlotTypeImage": "FancySlotTypeImage"
+    },
+    "from_value": {
+      "VendorSlotTypeVideo": "video",
+      "VendorSlotTypeImage": "image"
+    },
+    "to_value": {
+      "FancySlotTypeVideo": "video/mp4",
+      "FancySlotTypeImage": "image/mp4"
+    },
+    "change": false
+  }
+]
